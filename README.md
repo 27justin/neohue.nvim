@@ -2,6 +2,17 @@
 
 Control your Philips Hue lights from inside neovim.
 
+## Table of Contents
+  * [Demo](#demo)
+  * [Features](#features)
+  * [Dependencies](#dependencies)
+  * [Installation](#installation)
+  * [Setup](#setup)
+  * [Commands](#commands)
+  * [Lua API](#lua-api)
+  * [Telescope Integration](#telescope-integration)
+  * [Planned](#planned)
+
 ## Demo
 
 https://user-images.githubusercontent.com/72092018/162593127-88af1c54-8b27-4c63-a06e-f160ad3a5776.mp4

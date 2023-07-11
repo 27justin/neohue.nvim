@@ -52,6 +52,11 @@ use {
 }
 ```
 
+Then install the lua-cjson LuaRocks dependency:
+```bash
+sudo luarocks install lua-cjson
+```
+
 ## Setup
 
 ```lua

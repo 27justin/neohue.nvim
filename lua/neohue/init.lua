@@ -75,6 +75,7 @@ function M.discover()
 			if data:find("hue-bridgeid", 1, true) then
 				if not settings.silent then
 					vim.notify("Discovered HUE Bridge on " .. addr['ip'] .. ":" .. addr['port'], vim.log.levels.INFO)
+
 				end
 				settings.bridge_ip = addr['ip']
 
@@ -139,7 +140,8 @@ function M.connect()
 			local username = json_body[1].success.username
 			if #username > 0 then
 				if not settings.silent then
-					vim.notify("Successfully connected to HUE Bridge", vim.log.levels.INFO)
+					-- Disabled, vim.notify is not supported in callbacks anymore
+					--vim.notify("Successfully connected to HUE Bridge", vim.log.levels.INFO)
 				end
 				settings.username = username
 				set_username(username)
